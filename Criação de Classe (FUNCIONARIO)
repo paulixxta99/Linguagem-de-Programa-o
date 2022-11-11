@@ -1,0 +1,111 @@
+Classe Funcionário;
+
+
+class Funcionario
+
+    {
+
+        private string nome;
+
+        private int matricula;
+
+        private double salario;
+
+
+
+        public String Nome { get; set; }
+
+        public int Matricula { get; set; }
+
+        public double Salario { get; set; }
+
+    }
+
+
+
+Program:
+
+
+static void Main(string[] args)
+
+        {
+
+            Funcionario p1 = new Funcionario();
+
+            p1.Nome = "Jose";
+
+            Console.WriteLine(p1.Nome);
+
+
+            p1.Matricula =(12345);
+
+            Console.WriteLine(p1.Matricula);
+
+
+            p1.Salario = (4.212);
+
+            Console.WriteLine(p1.Salario);
+
+
+            Console.WriteLine("\n\r");
+
+
+            Funcionario p2 = new Funcionario();
+
+            p1.Nome = "Sabrina";
+
+            Console.WriteLine(p1.Nome);
+
+
+            p1.Matricula = (12345);
+
+            Console.WriteLine(p1.Matricula);
+
+
+            p1.Salario = (8.523);
+
+            Console.WriteLine(p1.Salario);
+
+
+            Console.WriteLine("\n\r");
+
+
+            Funcionario p3 = new Funcionario();
+
+            p1.Nome = "Andre";
+
+            Console.WriteLine(p1.Nome);
+
+
+            p1.Matricula = (12345);
+
+            Console.WriteLine(p1.Matricula);
+
+
+            p1.Salario = (1.523);
+
+            Console.WriteLine(p1.Salario);
+
+
+            Console.WriteLine("\n\r");
+
+
+
+            Funcionario p4 = new Funcionario();
+
+            p1.Nome = "Samuel";
+
+            Console.WriteLine(p1.Nome);
+
+
+            p1.Matricula = (12345);
+
+            Console.WriteLine(p1.Matricula);
+
+
+            p1.Salario = (6.523);
+
+            Console.WriteLine(p1.Salario);
+
+
+}
