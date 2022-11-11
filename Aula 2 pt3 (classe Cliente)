@@ -1,0 +1,56 @@
+namespace Aula2
+{                              
+    class Conta                
+    {                          
+        public int numero;
+        public Cliente titular;
+        public double saldo;
+
+        public double MostraSaldo()
+        {
+            return this.saldo;
+        }
+
+        public bool Sacar(double valor)
+        {
+            if (this.saldo >= valor){
+                this.saldo = this.saldo - valor;
+                return (true);
+            }
+            else
+            {
+                return (false);
+            }
+        }
+
+        public int MostraNumero()
+        {
+            return this.numero;
+        }
+
+        public string MostraTitular()
+        {
+            return "nome: " + titular.nome + " Cpf: " + titular.cpf;
+        }
+
+        public bool Depositar(double valor)
+        {
+            this.saldo = this.saldo + valor;
+            return (true);  
+        }
+
+        public bool Transferir(double valor, Conta conta)
+        {
+            if(saldo > valor)
+            {
+                this.saldo = this.saldo - valor;
+                conta.saldo = conta.saldo + valor;
+                return (true);
+            }
+            else
+            {
+                return (false);
+            }
+        }
+    }
+}
