@@ -1,0 +1,53 @@
+Classe Aluno:
+
+ class Aluno
+
+    {
+
+        private string nome;
+
+        private int matricula;
+
+        private string email;
+
+
+
+        public String Nome { get; set; }
+
+        public int Matricula { get; set; }
+
+        public String Email { get; set; }
+
+    }
+
+
+
+Program:
+
+class Program
+
+    {
+
+        static void Main(string[] args)
+
+        {
+
+            Aluno p1 = new Aluno();
+
+            p1.Nome = "Jose";
+
+            Console.WriteLine(p1.Nome);
+
+
+            p1.Matricula =(12345);
+
+            Console.WriteLine(p1.Matricula);
+
+
+            p1.Email = "jose.uscsonline.com.br";
+
+            Console.WriteLine(p1.Email);
+
+        }
+
+    }
